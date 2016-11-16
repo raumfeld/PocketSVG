@@ -28,7 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, readonly) NSString *SVGRepresentation;
 
-
+/*!
+ *  @discussion Bounds that take into account the lineWidth property.
+ *
+ */
+@property(nonatomic, readonly) CGRect boundsRespectingLineWidth;
 
 /*!
  *  Returns an array of SVGBezierPaths given an SVG's URL.
