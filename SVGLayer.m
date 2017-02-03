@@ -204,7 +204,7 @@ CGRect _AdjustCGRectForContentsGravity(CGRect aRect, CGSize aSize, NSString *aGr
 {
     CGRect bounds = CGRectZero;
     for(SVGBezierPath *path in _untouchedPaths) {
-        bounds = CGRectUnion(bounds, self.scaleLineWidth ? path.boundsRespectingLineWidth : path.bounds);
+        bounds = CGRectUnion(bounds, path.bounds);
     }
     return bounds.size;
 }

@@ -76,13 +76,6 @@
     return copy;
 }
 
-- (CGRect)boundsRespectingLineWidth
-{
-    CGFloat width = self.bounds.size.width + self.lineWidth * 2;
-    CGFloat height = self.bounds.size.height + self.lineWidth * 2;
-    return CGRectMake(self.bounds.origin.x, self.bounds.origin.y, width, height);
-}
-
 #if TARGET_OS_IPHONE
 + (instancetype)bezierPathWithCGPath:(CGPathRef)cgPath
 {
